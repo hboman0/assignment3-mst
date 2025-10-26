@@ -1,0 +1,63 @@
+{
+  "graphs": [
+    {
+      "name": "SmallGraph_6v",
+      "vertices": 6,
+      "edges": [
+        { "u": 0, "v": 1, "weight": 3 },
+        { "u": 0, "v": 2, "weight": 1 },
+        { "u": 1, "v": 3, "weight": 7 },
+        { "u": 2, "v": 3, "weight": 2 },
+        { "u": 3, "v": 4, "weight": 4 },
+        { "u": 4, "v": 5, "weight": 6 }
+      ]
+    },
+    {
+      "name": "MediumGraph_15v",
+      "vertices": 15,
+      "edges": [
+        { "u": 0, "v": 1, "weight": 4 },
+        { "u": 0, "v": 2, "weight": 7 },
+        { "u": 1, "v": 3, "weight": 6 },
+        { "u": 1, "v": 4, "weight": 3 },
+        { "u": 2, "v": 5, "weight": 8 },
+        { "u": 3, "v": 6, "weight": 5 },
+        { "u": 4, "v": 7, "weight": 7 },
+        { "u": 5, "v": 8, "weight": 9 },
+        { "u": 6, "v": 9, "weight": 2 },
+        { "u": 7, "v": 10, "weight": 11 },
+        { "u": 8, "v": 11, "weight": 3 },
+        { "u": 9, "v": 12, "weight": 4 },
+        { "u": 10, "v": 13, "weight": 6 },
+        { "u": 11, "v": 14, "weight": 5 },
+        { "u": 12, "v": 14, "weight": 8 }
+      ]
+    },
+    {
+      "name": "LargeGraph_20v",
+      "vertices": 20,
+      "edges": [
+        { "u": 0, "v": 1, "weight": 3 },
+        { "u": 0, "v": 2, "weight": 8 },
+        { "u": 1, "v": 3, "weight": 6 },
+        { "u": 2, "v": 4, "weight": 2 },
+        { "u": 3, "v": 5, "weight": 4 },
+        { "u": 4, "v": 6, "weight": 9 },
+        { "u": 5, "v": 7, "weight": 5 },
+        { "u": 6, "v": 8, "weight": 3 },
+        { "u": 7, "v": 9, "weight": 7 },
+        { "u": 8, "v": 10, "weight": 2 },
+        { "u": 9, "v": 11, "weight": 4 },
+        { "u": 10, "v": 12, "weight": 5 },
+        { "u": 11, "v": 13, "weight": 8 },
+        { "u": 12, "v": 14, "weight": 7 },
+        { "u": 13, "v": 15, "weight": 9 },
+        { "u": 14, "v": 16, "weight": 3 },
+        { "u": 15, "v": 17, "weight": 6 },
+        { "u": 16, "v": 18, "weight": 5 },
+        { "u": 17, "v": 19, "weight": 2 },
+        { "u": 18, "v": 19, "weight": 4 }
+      ]
+    }
+  ]
+}
