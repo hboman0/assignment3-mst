@@ -1,0 +1,7 @@
+Graph,Vertices,Edges,Algorithm,Total_Weight,Execution_Time_ms,Comparisons,Extra_Operations,Operation_Count
+SmallGraph_6v,6,6,Prim,16,1.7108,12,extractMinOps + updateKeyOps,11
+SmallGraph_6v,6,6,Kruskal,16,0.4679,5,findOps + unionOps,15
+MediumGraph_15v,15,15,Prim,79,0.0494,30,extractMinOps + updateKeyOps,29
+MediumGraph_15v,15,15,Kruskal,79,0.0327,15,findOps + unionOps,44
+LargeGraph_20v,20,20,Prim,93,0.1067,42,extractMinOps + updateKeyOps,41
+LargeGraph_20v,20,20,Kruskal,93,0.0441,19,findOps + unionOps,57
