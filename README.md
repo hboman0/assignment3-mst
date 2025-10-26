@@ -2,6 +2,8 @@ Assignment 3: Optimization of a City Transportation Network (Minimum Spanning Tr
 
 Student: Sovet Kazhmurat
 
+Group: SE-2431
+
 Language: Java (JSON input/output)
 
 Algorithms Implemented: Prim’s and Kruskal’s
@@ -29,13 +31,24 @@ Operation counts:
 Practical Comparison (from results):
 In practical testing, Kruskal’s algorithm consistently achieved lower execution times than Prim’s across all tested graph sizes. Although both algorithms produced identical MST total costs, Kruskal required fewer or equal total operations in most cases. This difference arises because Kruskal sorts all edges once and efficiently merges components using the Disjoint Set Union (DSU) structure, while Prim repeatedly updates priority queues during edge relaxation.
 
-Prim’s algorithm remains efficient and predictable, particularly in dense graphs, where adjacency lists and heaps optimize local edge selection. Kruskal, however, demonstrates stronger performance for sparse to moderately dense graphs, as seen in the tests. Both algorithms scale well — with execution times remaining under 2 milliseconds even for 20 vertices — confirming their suitability for city transportation network optimization.
-
-But in theory, Prim’s algorithm should outperform Kruskal’s on dense graphs because it doesn’t need to sort all edges. However, in my implementation, the graph is relatively small (30 vertices, ~400 edges). Java’s built-in sorting function is extremely optimized, and the DSU operations are nearly constant-time. Meanwhile, Prim’s use of a PriorityQueue adds object and heap overhead. So, for smaller or moderately dense graphs, Kruskal can still appear faster in practice.
+In theory, Prim’s algorithm should outperform Kruskal’s on dense graphs because it doesn’t need to sort all edges. However, in my implementation, the graph is relatively small (30 vertices, ~400 edges). Java’s built-in sorting function is extremely optimized, and the DSU operations are nearly constant-time. Meanwhile, Prim’s use of a PriorityQueue adds object and heap overhead. So, for smaller or moderately dense graphs, Kruskal can still appear faster in practice.
 <img width="422" height="90" alt="Снимок экрана 2025-10-27 015148" src="https://github.com/user-attachments/assets/22484a50-5696-438e-a992-aab965951e7e" />
 
-If we tested much larger graphs, Prim would begin to show its advantage:
+If we tested much larger graphs (200v, 10,000+e)
 <img width="424" height="90" alt="Снимок экрана 2025-10-27 015519" src="https://github.com/user-attachments/assets/d88e931a-bc5a-403a-a4ca-e838ecac5ef4" />
+
+In all tested graph sizes and densities — from small (6 vertices) to large, dense networks (200 vertices, 10,000+ edges) — Kruskal’s algorithm consistently achieved lower execution times compared to Prim’s algorithm.
+Although theoretical analysis suggests that Prim’s algorithm should be more efficient for dense graphs due to its vertex-based approach, practical implementation factors can alter this outcome.
+
+In particular:
+
+Kruskal’s single global edge sort and efficient Disjoint Set Union (DSU) operations are highly optimized and scale well.
+
+Prim’s algorithm involves repeated priority queue updates, which introduce constant-time overhead in Java’s PriorityQueue implementation.
+
+As a result, Kruskal performs faster even in dense graphs, while both algorithms still produce identical MST costs.
+
+Both algorithms demonstrated excellent scalability, with execution times under 25 milliseconds even for large, dense graphs of 200 vertices. This confirms that both methods are suitable for transportation network optimization, but Kruskal’s algorithm offers better real-world efficiency in Java.
 
 
 
@@ -43,13 +56,16 @@ If we tested much larger graphs, Prim would begin to show its advantage:
 
 Both Prim’s and Kruskal’s algorithms were correctly implemented and verified using multiple datasets. The results confirmed that both produce the same MST total weight and perform efficiently for different graph sizes.
 
-In terms of efficiency, Kruskal’s algorithm generally performed faster and required fewer comparisons and unions. It is therefore more suitable for sparse graphs or when the input is given as an edge list.
-Prim’s algorithm, while slightly slower in these experiments, is often preferred for dense graphs or when an adjacency list is already available.
+Despite theoretical expectations, experimental results show that Kruskal’s algorithm outperforms Prim’s even on dense graphs.
+Therefore, for practical Java implementations involving transportation networks of varying density, Kruskal’s algorithm is recommended due to its consistent performance and lower execution time.
+Both algorithms, however, produce identical MST total weights, confirming their correctness and reliability.
 
 Summary of recommendations:
 
-Use Kruskal’s algorithm for sparse graphs or edge-list representations.
+Use Kruskal’s algorithm for both sparse and dense graphs, as it demonstrated consistently faster execution and fewer total operations in practical tests.
 
-Use Prim’s algorithm for dense graphs or adjacency-list-based graphs.
+Prim’s algorithm remains a valid alternative, especially when the graph is stored as an adjacency list or when incremental MST updates are required.
 
-Both algorithms produce identical MST costs, ensuring correctness.
+Both algorithms produced identical MST total costs, confirming the correctness and reliability of the implementations.
+
+In real-world Java applications, Kruskal’s algorithm is generally more efficient and easier to implement when working with edge-based data such as transportation networks.
