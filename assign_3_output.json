@@ -1,0 +1,457 @@
+{"MST_Comparison_Results": [
+    {
+        "prim": {
+            "extractMinOps": 6,
+            "updateKeyOps": 5,
+            "mstEdges": [
+                {
+                    "u": 0,
+                    "v": 1,
+                    "weight": 3
+                },
+                {
+                    "u": 0,
+                    "v": 2,
+                    "weight": 1
+                },
+                {
+                    "u": 2,
+                    "v": 3,
+                    "weight": 2
+                },
+                {
+                    "u": 3,
+                    "v": 4,
+                    "weight": 4
+                },
+                {
+                    "u": 4,
+                    "v": 5,
+                    "weight": 6
+                }
+            ],
+            "executionTimeMs": 1.7108,
+            "totalWeight": 16,
+            "comparisons": 12,
+            "algorithm": "Prim"
+        },
+        "vertices": 6,
+        "edges": 6,
+        "kruskal": {
+            "unionOps": 5,
+            "mstEdges": [
+                {
+                    "u": 0,
+                    "v": 2,
+                    "weight": 1
+                },
+                {
+                    "u": 2,
+                    "v": 3,
+                    "weight": 2
+                },
+                {
+                    "u": 0,
+                    "v": 1,
+                    "weight": 3
+                },
+                {
+                    "u": 3,
+                    "v": 4,
+                    "weight": 4
+                },
+                {
+                    "u": 4,
+                    "v": 5,
+                    "weight": 6
+                }
+            ],
+            "executionTimeMs": 0.4679,
+            "totalWeight": 16,
+            "comparisons": 5,
+            "findOps": 10,
+            "algorithm": "Kruskal"
+        },
+        "graph": "SmallGraph_6v"
+    },
+    {
+        "prim": {
+            "extractMinOps": 15,
+            "updateKeyOps": 14,
+            "mstEdges": [
+                {
+                    "u": 0,
+                    "v": 1,
+                    "weight": 4
+                },
+                {
+                    "u": 0,
+                    "v": 2,
+                    "weight": 7
+                },
+                {
+                    "u": 1,
+                    "v": 3,
+                    "weight": 6
+                },
+                {
+                    "u": 1,
+                    "v": 4,
+                    "weight": 3
+                },
+                {
+                    "u": 2,
+                    "v": 5,
+                    "weight": 8
+                },
+                {
+                    "u": 3,
+                    "v": 6,
+                    "weight": 5
+                },
+                {
+                    "u": 4,
+                    "v": 7,
+                    "weight": 7
+                },
+                {
+                    "u": 11,
+                    "v": 8,
+                    "weight": 3
+                },
+                {
+                    "u": 6,
+                    "v": 9,
+                    "weight": 2
+                },
+                {
+                    "u": 7,
+                    "v": 10,
+                    "weight": 11
+                },
+                {
+                    "u": 14,
+                    "v": 11,
+                    "weight": 5
+                },
+                {
+                    "u": 9,
+                    "v": 12,
+                    "weight": 4
+                },
+                {
+                    "u": 10,
+                    "v": 13,
+                    "weight": 6
+                },
+                {
+                    "u": 12,
+                    "v": 14,
+                    "weight": 8
+                }
+            ],
+            "executionTimeMs": 0.0494,
+            "totalWeight": 79,
+            "comparisons": 30,
+            "algorithm": "Prim"
+        },
+        "vertices": 15,
+        "edges": 15,
+        "kruskal": {
+            "unionOps": 14,
+            "mstEdges": [
+                {
+                    "u": 6,
+                    "v": 9,
+                    "weight": 2
+                },
+                {
+                    "u": 1,
+                    "v": 4,
+                    "weight": 3
+                },
+                {
+                    "u": 8,
+                    "v": 11,
+                    "weight": 3
+                },
+                {
+                    "u": 0,
+                    "v": 1,
+                    "weight": 4
+                },
+                {
+                    "u": 9,
+                    "v": 12,
+                    "weight": 4
+                },
+                {
+                    "u": 3,
+                    "v": 6,
+                    "weight": 5
+                },
+                {
+                    "u": 11,
+                    "v": 14,
+                    "weight": 5
+                },
+                {
+                    "u": 1,
+                    "v": 3,
+                    "weight": 6
+                },
+                {
+                    "u": 10,
+                    "v": 13,
+                    "weight": 6
+                },
+                {
+                    "u": 0,
+                    "v": 2,
+                    "weight": 7
+                },
+                {
+                    "u": 4,
+                    "v": 7,
+                    "weight": 7
+                },
+                {
+                    "u": 2,
+                    "v": 5,
+                    "weight": 8
+                },
+                {
+                    "u": 12,
+                    "v": 14,
+                    "weight": 8
+                },
+                {
+                    "u": 7,
+                    "v": 10,
+                    "weight": 11
+                }
+            ],
+            "executionTimeMs": 0.0327,
+            "totalWeight": 79,
+            "comparisons": 15,
+            "findOps": 30,
+            "algorithm": "Kruskal"
+        },
+        "graph": "MediumGraph_15v"
+    },
+    {
+        "prim": {
+            "extractMinOps": 21,
+            "updateKeyOps": 20,
+            "mstEdges": [
+                {
+                    "u": 0,
+                    "v": 1,
+                    "weight": 3
+                },
+                {
+                    "u": 0,
+                    "v": 2,
+                    "weight": 8
+                },
+                {
+                    "u": 1,
+                    "v": 3,
+                    "weight": 6
+                },
+                {
+                    "u": 2,
+                    "v": 4,
+                    "weight": 2
+                },
+                {
+                    "u": 3,
+                    "v": 5,
+                    "weight": 4
+                },
+                {
+                    "u": 4,
+                    "v": 6,
+                    "weight": 9
+                },
+                {
+                    "u": 5,
+                    "v": 7,
+                    "weight": 5
+                },
+                {
+                    "u": 6,
+                    "v": 8,
+                    "weight": 3
+                },
+                {
+                    "u": 7,
+                    "v": 9,
+                    "weight": 7
+                },
+                {
+                    "u": 8,
+                    "v": 10,
+                    "weight": 2
+                },
+                {
+                    "u": 9,
+                    "v": 11,
+                    "weight": 4
+                },
+                {
+                    "u": 10,
+                    "v": 12,
+                    "weight": 5
+                },
+                {
+                    "u": 11,
+                    "v": 13,
+                    "weight": 8
+                },
+                {
+                    "u": 12,
+                    "v": 14,
+                    "weight": 7
+                },
+                {
+                    "u": 17,
+                    "v": 15,
+                    "weight": 6
+                },
+                {
+                    "u": 14,
+                    "v": 16,
+                    "weight": 3
+                },
+                {
+                    "u": 19,
+                    "v": 17,
+                    "weight": 2
+                },
+                {
+                    "u": 16,
+                    "v": 18,
+                    "weight": 5
+                },
+                {
+                    "u": 18,
+                    "v": 19,
+                    "weight": 4
+                }
+            ],
+            "executionTimeMs": 0.1067,
+            "totalWeight": 93,
+            "comparisons": 42,
+            "algorithm": "Prim"
+        },
+        "vertices": 20,
+        "edges": 20,
+        "kruskal": {
+            "unionOps": 19,
+            "mstEdges": [
+                {
+                    "u": 2,
+                    "v": 4,
+                    "weight": 2
+                },
+                {
+                    "u": 8,
+                    "v": 10,
+                    "weight": 2
+                },
+                {
+                    "u": 17,
+                    "v": 19,
+                    "weight": 2
+                },
+                {
+                    "u": 0,
+                    "v": 1,
+                    "weight": 3
+                },
+                {
+                    "u": 6,
+                    "v": 8,
+                    "weight": 3
+                },
+                {
+                    "u": 14,
+                    "v": 16,
+                    "weight": 3
+                },
+                {
+                    "u": 3,
+                    "v": 5,
+                    "weight": 4
+                },
+                {
+                    "u": 9,
+                    "v": 11,
+                    "weight": 4
+                },
+                {
+                    "u": 18,
+                    "v": 19,
+                    "weight": 4
+                },
+                {
+                    "u": 5,
+                    "v": 7,
+                    "weight": 5
+                },
+                {
+                    "u": 10,
+                    "v": 12,
+                    "weight": 5
+                },
+                {
+                    "u": 16,
+                    "v": 18,
+                    "weight": 5
+                },
+                {
+                    "u": 1,
+                    "v": 3,
+                    "weight": 6
+                },
+                {
+                    "u": 15,
+                    "v": 17,
+                    "weight": 6
+                },
+                {
+                    "u": 7,
+                    "v": 9,
+                    "weight": 7
+                },
+                {
+                    "u": 12,
+                    "v": 14,
+                    "weight": 7
+                },
+                {
+                    "u": 0,
+                    "v": 2,
+                    "weight": 8
+                },
+                {
+                    "u": 11,
+                    "v": 13,
+                    "weight": 8
+                },
+                {
+                    "u": 4,
+                    "v": 6,
+                    "weight": 9
+                }
+            ],
+            "executionTimeMs": 0.0441,
+            "totalWeight": 93,
+            "comparisons": 19,
+            "findOps": 38,
+            "algorithm": "Kruskal"
+        },
+        "graph": "LargeGraph_20v"
+    }
+]}
