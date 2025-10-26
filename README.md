@@ -22,10 +22,15 @@ Kruskal’s algorithm follows an edge-based greedy approach, building the MST by
 
 Prim’s algorithm, on the other hand, is vertex-based. It starts from one vertex and grows the MST by adding the smallest edge connecting a vertex in the MST to one outside of it. It typically uses a priority queue (min-heap) for edge selection. Complexity: O(E log V)
 
+Operation counts:
+<img width="745" height="161" alt="image" src="https://github.com/user-attachments/assets/fd64b494-753f-474f-9311-0d7366951940" />
+
+
 Practical Comparison (from results):
 In practical testing, Kruskal’s algorithm consistently achieved lower execution times than Prim’s across all tested graph sizes. Although both algorithms produced identical MST total costs, Kruskal required fewer or equal total operations in most cases. This difference arises because Kruskal sorts all edges once and efficiently merges components using the Disjoint Set Union (DSU) structure, while Prim repeatedly updates priority queues during edge relaxation.
 
 Prim’s algorithm remains efficient and predictable, particularly in dense graphs, where adjacency lists and heaps optimize local edge selection. Kruskal, however, demonstrates stronger performance for sparse to moderately dense graphs, as seen in the tests. Both algorithms scale well — with execution times remaining under 2 milliseconds even for 20 vertices — confirming their suitability for city transportation network optimization.
+
 3. Conclusions and Recommendations
 
 Both Prim’s and Kruskal’s algorithms were correctly implemented and verified using multiple datasets. The results confirmed that both produce the same MST total weight and perform efficiently for different graph sizes.
