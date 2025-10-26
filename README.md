@@ -13,7 +13,8 @@ The purpose of this project was to implement Prim’s and Kruskal’s algorithms
 The input data was read from a JSON file (assign_3_input.json), and the results were saved in another JSON file (assign_3_output.json). Each dataset contained the number of vertices, edges, and edge weights. The output file included the MST edges, total cost, operation counts, and execution times for both algorithms.
 
 The table below summarizes the results obtained for three datasets (small, medium, and large graphs):
-![img_1.png](img_1.png)
+<img width="1249" height="165" alt="Снимок экрана 2025-10-26 151053" src="https://github.com/user-attachments/assets/a62d2ec8-2463-467a-9782-0b2b6426b126" />
+
 2. Comparison Between Prim’s and Kruskal’s Algorithms
 
 Theoretical comparison:
